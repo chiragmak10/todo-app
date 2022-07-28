@@ -1,0 +1,38 @@
+import { FC, ReactElement, useState } from 'react'
+import { Navbar } from './Mainpage/ItemSection'
+import { DisplaySection } from './Mainpage'
+import { mockData, MockData, MockDataContext } from '../common/hooks/mockData'
+import { Grid, Paper } from '@mui/material'
+
+interface Props {
+  id?: string
+}
+
+export const App: FC<Props> = (): ReactElement => {
+  const [mockTodoList, setMockTodoList] = useState<MockData[]>(mockData)
+  return (
+    <MockDataContext.Provider
+      value={{ mockData: mockTodoList, setMockData: setMockTodoList }}
+    >
+      <Grid
+        container
+        css={{
+          display: 'grid',
+          height: '100vh',
+          width: '100vw',
+          gridTemplateColumns: '0.18fr 1fr ',
+        }}
+      >
+        <Grid
+          css={{
+            background: '#d0d0d0',
+          }}
+        >
+          <Navbar />
+        </Grid>
+
+        <DisplaySection />
+      </Grid>
+    </MockDataContext.Provider>
+  )
+}
