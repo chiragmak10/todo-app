@@ -53,8 +53,8 @@ export const InputForm: FC<Props> = (): ReactElement => {
 
             <Button
               disabled={values.taskName.length < 3}
-              variant="contained"
-              size="medium"
+              variant="text"
+              size="small"
               type="submit"
             >
               Add

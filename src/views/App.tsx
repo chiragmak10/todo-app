@@ -25,7 +25,7 @@ export const App: FC<Props> = (): ReactElement => {
       >
         <Grid
           css={{
-            background: '#d0d0d0',
+            background: '#f0f0f0',
           }}
         >
           <Navbar />

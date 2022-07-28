@@ -29,7 +29,10 @@ export const Navbar = () => {
             <ListItem
               key={x.sectionType}
               disablePadding
-              css={{ background: x.active ? '#84b3ffeb' : '#d7d7d7' }}
+              css={{
+                borderRadius: 12,
+                background: x.active ? '#84b3ffeb' : '#f0f0f0',
+              }}
               onClick={() => {
                 setMockData(
                   mockData.map((y) =>
