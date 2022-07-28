@@ -49,6 +49,7 @@ export const AddItems: FC<Props> = (): ReactElement => {
                 label="Add Section..."
                 name="name"
                 variant="standard"
+                value={values.name}
                 onChange={(e) => {
                   setFieldValue('name', e.target.value)
                 }}
@@ -57,8 +58,8 @@ export const AddItems: FC<Props> = (): ReactElement => {
             <Grid item xs={2}>
               <Button
                 variant="text"
-                size="large"
-                disabled={values.name.length < 5}
+                size="medium"
+                disabled={values.name.length < 3}
                 type="submit"
               >
                 <FontAwesomeIcon icon={faPlus} />
