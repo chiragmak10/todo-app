@@ -24,13 +24,14 @@ export const Navbar = () => {
       }}
     >
       <Grid item>
-        <List disablePadding>
+        <List>
           {mockData.map((x) => (
             <ListItem
               key={x.sectionType}
               disablePadding
               css={{
                 borderRadius: 12,
+
                 background: x.active ? '#84b3ffeb' : '#f0f0f0',
               }}
               onClick={() => {
