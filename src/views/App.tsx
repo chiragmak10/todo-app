@@ -2,7 +2,7 @@ import { FC, ReactElement, useState } from 'react'
 import { Navbar } from './Mainpage/ItemSection'
 import { DisplaySection } from './Mainpage'
 import { mockData, MockData, MockDataContext } from '../common/hooks/mockData'
-import { Grid, Paper } from '@mui/material'
+import { Grid } from '@mui/material'
 
 interface Props {
   id?: string
