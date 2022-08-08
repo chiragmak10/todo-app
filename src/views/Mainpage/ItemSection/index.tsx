@@ -16,7 +16,7 @@ export const Navbar = () => {
   return (
     <Grid
       css={{
-        borderRight: '1px solid black',
+        borderRight: '1.4px solid #0000003b',
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
@@ -24,14 +24,13 @@ export const Navbar = () => {
       }}
     >
       <Grid item>
-        <List>
+        <List css={{ margin: 10 }}>
           {mockData.map((x) => (
             <ListItem
               key={x.sectionType}
               disablePadding
               css={{
                 borderRadius: 12,
-
                 background: x.active ? '#84b3ffeb' : '#f0f0f0',
               }}
               onClick={() => {
