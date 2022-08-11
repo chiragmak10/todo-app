@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { CSSObject } from '@emotion/react';
 import { useMockData } from '../../../common/hooks/mockData';
 import {
   Grid,
@@ -45,7 +43,7 @@ export const Navbar = () => {
             >
               <ListItemButton
                 onClick={(e) => {
-                  console.log(e);
+                  // console.log(e);
                 }}
               >
                 <ListItemText primary={x.sectionType} />
