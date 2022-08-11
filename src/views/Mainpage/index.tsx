@@ -1,6 +1,6 @@
-import { FC, ReactElement } from 'react'
-import { InputForm } from './TodoList/TodoForm'
-import { TodoList } from './TodoList'
+import { FC, ReactElement } from 'react';
+import { InputForm } from './TodoList/TodoForm';
+import { TodoList } from './TodoList';
 
 export const DisplaySection: FC = (): ReactElement => {
   return (
@@ -15,5 +15,5 @@ export const DisplaySection: FC = (): ReactElement => {
       <TodoList />
       <InputForm />
     </div>
-  )
-}
+  );
+};
